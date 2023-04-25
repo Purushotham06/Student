@@ -1,0 +1,9 @@
+{% extends 'bootstrap4.html' %}
+{% block body %}
+<form action="readlogin" method="post">
+  {% csrf_token %}
+  Username<input type="text" id="tbuname" name="tbuname"><br/>
+  Password<input type="password" id="tbpass" name="tbpass"><br/>
+  <input type="submit" value="Login">
+</form>
+{% endblock %}
